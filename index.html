@@ -4,10 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexa Simons Portfolio Home</title>
+    <link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600&family=Kreon:wght@300;400;700&family=Merriweather+Sans:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
+
+    <!--Nav Bar-->
+    <nav id="nav-bar">
+        <div class="logo">
+            <img src="resources/images/logo-2.JPG">
+        </div>
+        <div class="left">
+            <ul class="nav-list">
+                <li><a href="#about-me" id="anchor">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-display">
+                <div class="menu-icon">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
         
+    <!--Header Section-->
+    <header class="header">
+        <div class="color-filter">
+            <div class="title">
+                <h1>Alexa Simons</h1>
+            </div>
+        </div>
     </header>
+
+    <!--Main Content Section-->
+    <main>
+        <!--About Me-->
+        <div id="about-me">
+            <h2>About Me</h2>
+            <div class="container">
+                <div class="image-container">
+                    <img src="resources/images/about-me-img.jpg" alt="">
+                </div>
+                <div class="paragraph-container">
+                    <p>Hello, I’m Alexa and welcome to my portfolio! I am a detail-oriented and highly motivated professional who graduated in May of 2019 with a Bachelor of Science in Bioengineering and minors in Entrepreneurship and Mathematics. After graduating, I held a 
+                        position as a Field Account Executive for an occupational health company. I learned a ton through this experience but have decided to further grow in a profession where I can utilize my strong problem-solving skills along-side my creativity. I have discovered 
+                        my passion for front-end engineering through an online coding platform, <a href="https://www.codecademy.com">Codecademy</a>, where I have learned and continue to build the skills and many aspects that make up this exciting field. With all the new skills I am 
+                        developing (no pun intended, really), I can't wait to become a front-end developer!
+                    </p>
+                    <p> I enjoy working on projects where I can use my clever and critical thinking skills to overcome various types of challenges. I am an analytical and numerically driven individual and find numbers to be my strong suit. I am also adaptable and work well 
+                        in teams, so I thrive in environments where I can collaborate with others to generate the best and most innovative outcomes. I always give it my all, work hard, and maintain a positive attitude in everything that I do. Afterall, these things (along 
+                        with a touch of planning, of course) allow me to achieve my goals, no matter how large or daunting a task may be! As someone who is self-motivated and teachable, I catch on to new things quickly and with ease. Having a natural curiosity allows me to 
+                        further dive into new concepts on my own, demonstrating the ability to efficiently self-learn. In fact, it is this curiosity that drove me to learn more about front-end engineering to begin with! 
+                    </p>
+                    <p>In my free time I enjoy working on web development/coding projects (both individual and Codecademy inspired) that allow me to learn new skills and strengthen the skills I have. I also enjoy completing DIY and other art projects, assisting friends/colleagues 
+                        in anything math related (I know, I know, “Who enjoys that” right? I just genuinely love math!) and partaking in outdoor activities such as hiking and playing golf.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Skills-->
+        <div id="skills">
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Microsoft Word/Excel/PowerPoint</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>SOLIDWORKS</li>
+                    <li>MATLAB</li>
+                    <li>Simulink</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div id="projects">
+            <h2>Projects</h2>
+            <div>
+                <details>
+                    <summary>Tea Cozy</summary>
+                    <div class="container">
+                        <img src="./resources/images/tea-cozy-all.JPG" alt="Image of the completed Tea Cozy web page.">
+                        <ul class="li-container">
+                            <li class="project-title">Tea Cozy</li>
+                            <li class="date">December 2020</li>
+                            <li>By following a design spec sheet, I re-created the HTML and CSS aspects of a web page and used flexbox to ensure the web page was responsive. To view the design spec sheet 
+                                provided by Codecademy, click <a href="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg">here</a>.
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>The Coding Club</summary>
+                    <div class="container">
+                        <img src="./resources/images/coding-club.JPG" alt="Image of The Coding Club web page.">
+                        <img src="./resources/images/coding-club-2.JPG" alt="">
+                        <ul class="li-container">
+                            <li class="project-title">The Coding Club</li>
+                            <li class="date">December 2020</li>
+                            <li>I designed and created a responsive web page for The Coding Club, a theoretical club I came up with, using HTML and CSS.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!--Game-->
+                <details>
+                    <summary>Rock, Paper, Scissors Game</summary>
+                    <div class="container">
+                        <div class="game">
+                            <div class="game-instructions">
+                                <div class="instruction-box">
+                                    <h4>Step 1</h4>
+                                    <p>Input either 'rock', 'paper', or 'scissors'. You can also try guessing the secret code word that will beat all!</p>
+                                </div>
+                                <div class="instruction-box">
+                                    <h4>Step 2</h4>
+                                    <p>Click "Play" to submit your choice and see who won. (paper beats rock, rock beats scissors, and scissors beats paper)</p>
+                                </div>
+                                <div class="instruction-box">
+                                    <h4>Step 3</h4>
+                                    <p>Click "Next Round" to play again.</p>
+                                </div>
+                            </div>
+
+                            <div class="game-container">
+                                <div class="round">
+                                    <p class="round-label">Round <span id="round-count">1</span></p>
+                                    <p class="winner-label" id="winner-congrats">Winner: <span id="winner">?</span></p>
+                                </div>
+
+                                <div class="play-area">
+                                    <div class="computer-move moves">
+                                        <div class="play-title">
+                                            <p class="player-label">Computer</p>
+                                            <p class="score-label">Score: <span id="computer-score">0</span></p>
+                                        </div>
+                                        <p id="computer-move">?</p>
+                                    </div>
+
+                                    <div class="user-move moves">
+                                        <div class="play-title">
+                                            <p class="player-label">You</p>
+                                            <p class="score-label">Score: <span id="user-score">0</span></p>
+                                        </div>
+
+                                        <input type="text" id="user-move" required>
+
+                                        <button class="button" id="play">Play</button>
+                                        <p id="error-message"></p>
+                                    </div>
+                                
+                                </div>
+
+                                <div class="next-round-container">
+                                    <button class="button" id="next-round" disabled>Next Round</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <ul class="li-container">
+                            <li class="project-title">Rock, Paper, Scissors Game</li>
+                            <li class="date">January 2021</li>
+                            <li>Using HTML, CSS, and JavaScript, along with inspiration from multiple projects I have completed on Codecademy, I created an interactive game of rock, paper, scissors. I further developed functions I had previously written, and I 
+                                utilized resources and guidance from supplemental code on Codecademy’s projects along with my knowledge of the DOM (document object model) to successfully integrate this game into my website. When I would get stuck, I used the 
+                                console in Chrome Dev Tools to troubleshoot and effectively debug my code to ensure my game was working as expected. This process allowed me to better understand real applications of writing JavaScript code to interact with the 
+                                DOM and increased my comfortability with writing code to add engagement and improve the user experience of my website. Ultimately, this experience got me more excited for future projects I will complete utilizing HTML, CSS, and 
+                                JavaScript all together!
+                            </li>
+                        </ul>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <ul>
+            <li class="footer-logo"><img src="resources/images/logo-2.JPG"></li>
+            <li><h3>Alexa Simons</h3></li>
+            <li>copyright Alexa Simons 2021</li>
+        </ul>
+    </footer>
+    
+
+    <!--JavaScript-->
+    <script src="resources/javascript/script.js"></script>
 </body>
 </html>
