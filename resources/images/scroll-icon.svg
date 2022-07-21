@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49">
+  <g id="scroll-icon" transform="translate(-1863 -1000)">
+    <g id="border" transform="translate(1863 1000)" fill="none" stroke="#4f4f51" stroke-width="2.25">
+      <rect width="28" height="49" rx="14" stroke="none"/>
+      <rect x="1.125" y="1.125" width="25.75" height="46.75" rx="12.875" fill="none"/>
+    </g>
+    <path id="arrow" d="M14.542,17.533l6.315-5.956a1.24,1.24,0,0,1,1.686,0,1.088,1.088,0,0,1,0,1.593l-7.156,6.749a1.244,1.244,0,0,1-1.646.033L6.536,13.175a1.086,1.086,0,0,1,0-1.593,1.24,1.24,0,0,1,1.686,0Z" transform="translate(1862.461 1016.754)" fill="#4f4f51"/>
+  </g>
+</svg>
