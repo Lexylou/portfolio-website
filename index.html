@@ -3,68 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexa Simons Portfolio Home</title>
+    <title>Home | Alexa Simons Portfolio</title>
     <link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600&family=Kreon:wght@300;400;700&family=Merriweather+Sans:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <!--Nav Bar-->
-    <nav id="nav-bar">
-        <div class="logo">
-            <img src="resources/images/logo-2.JPG">
-        </div>
-        <div class="left">
-            <ul class="nav-list">
-                <li><a href="#about-me" id="anchor">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-display">
-                <div class="menu-icon">
-                    <div class="line-one"></div>
-                    <div class="line-two"></div>
-                    <div class="line-three"></div>
+    <!--Nav Bar and Header Container-->
+    <div id="header-container">
+        <!--Nav Bar-->
+        <nav id="nav-bar">
+            <div class="logo">
+                <a class="small-screen" href="./index.html">
+                    <img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo">
+                </a>
+                <a class="large-screen" href="./index.html">
+                    <img src="resources/images/as-logo-with-name.svg" alt="Alexa Simons logo">
+                </a>
+                
+            </div>
+            <div>
+                <ul class="nav-list">
+                    <li><a class="current-page" href="./index.html">Home</a></li>
+                    <li><a class="hover-underline" href="./about.html">About</a></li>
+                    <li><a class="hover-underline" href="./projects.html">Projects</a></li>
+                    <li><a class="contact-decoration" href="./contact.html">Contact</a></li>
+                </ul>
+            
+            </div>
+        </nav>
+
+        <!--Header-->
+        <header class="header">
+            <div class="header-main-content">
+                
+                <div class="title">
+                    <h1>Hello<span>.</span> I am Alexa</h1>
+                    <h2>creative web designer, developer, & front-end engineer</h2>
                 </div>
             </div>
-        </div>
-    </nav>
-        
-    <!--Header Section-->
-    <header class="header">
-        <div class="color-filter">
-            <div class="title">
-                <h1>Alexa Simons</h1>
-            </div>
-        </div>
-    </header>
 
-    <!--Main Content Section-->
+            <div class="scroll">
+                <p class="large-screen">Curious about what I have to offer?</p>
+                <div>
+                    <p>Scroll</p>
+                    <img src="./resources/images/scroll-icon.svg" alt="" />
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <!--Main Content-->
     <main>
         <!--About Me-->
         <div id="about-me">
             <h2>About Me</h2>
+            <div class="section-underline"></div>
             <div class="container">
                 <div class="image-container">
-                    <img src="resources/images/about-me-img.jpg" alt="">
+                    <img src="resources/images/rainbow-triangle-pic.png" alt="" />
                 </div>
+
                 <div class="paragraph-container">
-                    <p>Hello, I’m Alexa and welcome to my portfolio! I am a detail-oriented and highly motivated professional who graduated in May of 2019 with a Bachelor of Science in Bioengineering and minors in Entrepreneurship and Mathematics. After graduating, I held a 
-                        position as a Field Account Executive for an occupational health company. I learned a ton through this experience but have decided to further grow in a profession where I can utilize my strong problem-solving skills along-side my creativity. I have discovered 
-                        my passion for front-end engineering through an online coding platform, <a href="https://www.codecademy.com">Codecademy</a>, where I have learned and continue to build the skills and many aspects that make up this exciting field. With all the new skills I am 
+                    <p class="intro-sentence">Hello, Alexa here and welcome to my portfolio! I am a self taught <span>web designer, developer and front-end engineer!</span></p>
+                        <p>
+                         I am a detail-oriented and highly motivated professional who graduated in May of 2019 with a Bachelor of Science in Bioengineering and minors in Entrepreneurship and Mathematics. After graduating, I held a position as a Field Account Executive for an occupational health company. I learned a ton through this experience but have decided to further grow in a profession where I can utilize my strong problem-solving skills along-side my creativity. I have discovered my passion for front-end engineering through an online coding platform, <a href="https://www.codecademy.com" class="thick-underline" target="_blank">Codecademy</a>, where I have learned and continue to build the skills and many aspects that make up this exciting field. With all the new skills I am 
                         developing (no pun intended, really), I can't wait to become a front-end developer!
                     </p>
-                    <p> I enjoy working on projects where I can use my clever and critical thinking skills to overcome various types of challenges. I am an analytical and numerically driven individual and find numbers to be my strong suit. I am also adaptable and work well 
-                        in teams, so I thrive in environments where I can collaborate with others to generate the best and most innovative outcomes. I always give it my all, work hard, and maintain a positive attitude in everything that I do. Afterall, these things (along 
-                        with a touch of planning, of course) allow me to achieve my goals, no matter how large or daunting a task may be! As someone who is self-motivated and teachable, I catch on to new things quickly and with ease. Having a natural curiosity allows me to 
-                        further dive into new concepts on my own, demonstrating the ability to efficiently self-learn. In fact, it is this curiosity that drove me to learn more about front-end engineering to begin with! 
-                    </p>
-                    <p>In my free time I enjoy working on web development/coding projects (both individual and Codecademy inspired) that allow me to learn new skills and strengthen the skills I have. I also enjoy completing DIY and other art projects, assisting friends/colleagues 
-                        in anything math related (I know, I know, “Who enjoys that” right? I just genuinely love math!) and partaking in outdoor activities such as hiking and playing golf.
-                    </p>
+
+                    <div class="view-more-button-container" >
+                        <a class="view-more-button" href="./about.html" >More About Me</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -73,48 +89,97 @@
         <div id="skills">
             <div class="skills">
                 <h2>Skills</h2>
-                <ul>
-                    <li>Microsoft Word/Excel/PowerPoint</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>SOLIDWORKS</li>
-                    <li>MATLAB</li>
-                    <li>Simulink</li>
-                </ul>
+                <div class="section-underline"></div>
+                <div class="skills-container">
+                    <ul>
+                        <li>
+                            <img src="./resources/images/html-icon-dark-mode.svg" alt="HTML logo" />
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/css-icon-dark-mode.svg" alt="CSS logo" />
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/sass-icon-dark-mode.svg" alt="Sass logo" />
+                            <p>Sass</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/javascript-icon-dark-mode.svg" alt="JavaScript logo" />
+                            <p>JavaScript</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/react-icon-dark-mode.svg" alt="React logo" />
+                            <p>React</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/redux-icon-dark-mode.svg" alt="Redux logo" />
+                            <p>Redux</p> 
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li>
+                            <img src="./resources/images/adobe-xd-icon-dark-mode.svg" alt="Adobe Xd logo" />
+                            <p>Adobe Xd</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/photoshop-icon-dark-mode.svg" alt="PhotoShop logo" />
+                            <p>Adobe PhotoShop</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/python-icon-dark-mode.svg" alt="Python logo" />
+                            <p>Python</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/excel-icon-dark-mode.svg" alt="Microsoft Excel logo" />
+                            <p>Microsoft Excel</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/word-icon-dark-mode.svg" alt="Microsoft Word logo" />
+                            <p>Microsoft Word</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/power-point-icon-dark-mode.svg" alt="Microsoft PowerPoint logo" />
+                            <p>Microsoft PowerPoint</p>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
 
         <!--Projects-->
         <div id="projects">
             <h2>Projects</h2>
+            <div class="section-underline"></div>
             <div>
                 <details>
                     <summary>Tea Cozy</summary>
                     <div class="container">
-                        <img src="./resources/images/tea-cozy-all.JPG" alt="Image of the completed Tea Cozy web page.">
-                        <ul class="li-container">
+                        <ul class="description-container">
                             <li class="project-title">Tea Cozy</li>
                             <li class="date">December 2020</li>
                             <li>By following a design spec sheet, I re-created the HTML and CSS aspects of a web page and used flexbox to ensure the web page was responsive. To view the design spec sheet 
-                                provided by Codecademy, click <a href="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg">here</a>.
+                                provided by Codecademy, click <a href="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg" class="thick-underline" target="_blank">here</a>.
                             </li>
                         </ul>
+
+                        <img src="./resources/images/tea-cozy-all.JPG" alt="Image of the completed Tea Cozy web page."> 
                     </div>
                 </details>
 
                 <details>
                     <summary>The Coding Club</summary>
                     <div class="container">
-                        <img src="./resources/images/coding-club.JPG" alt="Image of The Coding Club web page.">
-                        <img src="./resources/images/coding-club-2.JPG" alt="">
-                        <ul class="li-container">
+                        <ul class="description-container">
                             <li class="project-title">The Coding Club</li>
                             <li class="date">December 2020</li>
                             <li>I designed and created a responsive web page for The Coding Club, a theoretical club I came up with, using HTML and CSS.</li>
                         </ul>
+
+                        <img src="./resources/images/coding-club.JPG" alt="Image of The Coding Club web page.">
+                        <img src="./resources/images/coding-club-2.JPG" alt="">
                     </div>
                 </details>
 
@@ -122,6 +187,17 @@
                 <details>
                     <summary>Rock, Paper, Scissors Game</summary>
                     <div class="container">
+                        <ul class="description-container">
+                            <li class="project-title">Rock, Paper, Scissors Game</li>
+                            <li class="date">January 2021</li>
+                            <li>Using HTML, CSS, and JavaScript, along with inspiration from multiple projects I have completed on Codecademy, I created an interactive game of rock, paper, scissors. I further developed functions I had previously written, and I 
+                                utilized resources and guidance from supplemental code on Codecademy’s projects along with my knowledge of the DOM (document object model) to successfully integrate this game into my website. When I would get stuck, I used the 
+                                console in Chrome Dev Tools to troubleshoot and effectively debug my code to ensure my game was working as expected. This process allowed me to better understand real applications of writing JavaScript code to interact with the 
+                                DOM and increased my comfortability with writing code to add engagement and improve the user experience of my website. Ultimately, this experience got me more excited for future projects I will complete utilizing HTML, CSS, and 
+                                JavaScript all together!
+                            </li>
+                        </ul>
+
                         <div class="game">
                             <div class="game-instructions">
                                 <div class="instruction-box">
@@ -134,7 +210,7 @@
                                 </div>
                                 <div class="instruction-box">
                                     <h4>Step 3</h4>
-                                    <p>Click "Next Round" to play again.</p>
+                                    <p>Click "Next Round" to play again. Refresh page to start game count over.</p>
                                 </div>
                             </div>
 
@@ -173,33 +249,61 @@
 
                             </div>
                         </div>
-
-                        <ul class="li-container">
-                            <li class="project-title">Rock, Paper, Scissors Game</li>
-                            <li class="date">January 2021</li>
-                            <li>Using HTML, CSS, and JavaScript, along with inspiration from multiple projects I have completed on Codecademy, I created an interactive game of rock, paper, scissors. I further developed functions I had previously written, and I 
-                                utilized resources and guidance from supplemental code on Codecademy’s projects along with my knowledge of the DOM (document object model) to successfully integrate this game into my website. When I would get stuck, I used the 
-                                console in Chrome Dev Tools to troubleshoot and effectively debug my code to ensure my game was working as expected. This process allowed me to better understand real applications of writing JavaScript code to interact with the 
-                                DOM and increased my comfortability with writing code to add engagement and improve the user experience of my website. Ultimately, this experience got me more excited for future projects I will complete utilizing HTML, CSS, and 
-                                JavaScript all together!
-                            </li>
-                        </ul>
                     </div>
 
                 </details>
 
             </div>
+
+            <div class="view-more-button-container" >
+                <a class="view-more-button" href="./projects.html" >More Projects</a>
+            </div>
+        </div>
+
+        <!--Hire Me-->
+        <div id="hire-me">
+            <h2>Like what you see?</h2>
+
+            <div class="hire-me-button-container" >
+                <a class="hire-me-button" href="./contact.html" >Hire Me</a>
+            </div>
+
         </div>
 
     </main>
 
-    <!--Footer Section-->
+    <!--Footer-->
+    <div class="footer-decor"></div>
     <footer>
-        <ul>
-            <li class="footer-logo"><img src="resources/images/logo-2.JPG"></li>
-            <li><h3>Alexa Simons</h3></li>
-            <li>copyright Alexa Simons 2021</li>
-        </ul>
+        <div class="logo-info-container">
+            <ul>
+                <li class="footer-logo"><img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo"></li>
+                <li class="copyright"><span class="name" >Alexa Simons 2021</span></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact-info-container">
+            <ul>
+                <li>
+                    <img src="./resources/images/linkedin-icon.svg" alt="LinkedIn" />
+                    <p><a href="https://www.linkedin.com/in/alexa-simons/" target="_blank">linkedin.com/in/alexa-simons/</a></p>
+                </li>
+                <li>
+                    <img src="./resources/images/github-icon.svg" alt="GitHub" />
+                    <p><a href="https://github.com/Lexylou" target="_blank">github.com/Lexylou</a></p>
+                </li>
+                <li>
+                    <img src="./resources/images/email-icon.svg" alt="Email address" />
+                    <p>simons.alexa@gmail.com</p>
+                </li>
+                <li>
+                    <img class="location-icon" src="./resources/images/location-icon.svg" alt="Location" />
+                    <p>Seattle, WA Area</p>
+                </li>
+                
+            </ul>
+        </div>
+        
     </footer>
     
 

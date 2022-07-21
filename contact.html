@@ -3,59 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Contact | Alexa Simons Portfolio</title>
     <link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600&family=Kreon:wght@300;400;700&family=Merriweather+Sans:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
-    <!--Nav Bar-->
-    <nav id="nav-bar">
-        <div class="logo">
-            <img src="resources/images/logo-2.JPG">
-        </div>
-        <div class="left">
-            <ul class="nav-list">
-                <li><a href="./index.html#about-me">About Me</a></li>
-                <li><a href="./index.html#skills">Skills</a></li>
-                <li><a href="./index.html#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-icon">
-                <div class="line-one"></div>
-                <div class="line-two"></div>
-                <div class="line-three"></div>
+     <!--Nav Bar and Header Container-->
+     <div id="non-home-header-container">
+        <!--Nav Bar-->
+        <nav id="nav-bar">
+            <div class="logo">
+                <a class="small-screen" href="./index.html">
+                    <img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo">
+                </a>
+                <a class="large-screen" href="./index.html">
+                    <img src="resources/images/as-logo-with-name.svg" alt="Alexa Simons logo">
+                </a>
+                
             </div>
-        </div>
-    </nav>
+            <div>
+                <ul class="nav-list">
+                    <li><a class="hover-underline" href="./index.html">Home</a></li>
+                    <li><a class="hover-underline" href="./about.html">About</a></li>
+                    <li><a class="hover-underline" href="./projects.html">Projects</a></li>
+                    <li><a class="contact-decoration" href="./contact.html">Contact</a></li>
+                </ul>
+            
+            </div>
+        </nav>
+
+        <!--Header-->
+        <header class="header">
+            <div>
+                <div class="title">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </header>
+        <div class="header-decor"></div>
+
+    </div>
     
-    <!--Main Content Section-->
+    <!--Main Content-->
     <main>
         <!--Contact-->
         <div id="contact">
             <h2>Contact Me</h2>
-            <p>If you have any questions for me, or would just like to reach out, please use any of the below methods to contact me.</p>
-            <ul>
-                <li>Email: <span>simons.alexa@gmail.com</span></li>
-                <li>Phone: <span>(832) 385-9495</span></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/alexa-simons/">linkedin.com/in/alexa-simons/</a></li>
-                <li>GitHub: <a href="https://github.com/Lexylou">github.com/Lexylou</a></li>
-            </ul>
-            <img src="resources/images/contact-img.JPG" alt="">
+            <div class="section-underline"></div>
+            <p>I am available for remote work or in-person work in the greater Seattle area. If you have any questions for me, or would just like to reach out, please use any of the below methods to contact me. I look forward to hearing from you!</p>
+            <div class="container">
+                <ul>
+                    <li>Email: <span>simons.alexa@gmail.com</span></li>
+                    <li>Phone: <span>(832) 385-9495</span></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/alexa-simons/" class="thick-underline" target="_blank">linkedin.com/in/alexa-simons/</a></li>
+                    <li>GitHub: <a href="https://github.com/Lexylou" class="thick-underline" target="_blank">github.com/Lexylou</a></li>
+                </ul>
+
+                <img src="./resources/images/about-rainbow-triangle.png" />
+            </div>
+            
         </div>
     </main>
 
     <!--Footer Section-->
+    <div class="footer-decor"></div>
     <footer>
-        <ul>
-            <li class="footer-logo"><img src="resources/images/logo-2.JPG"></li>
-            <li><h3>Alexa Simons</h3></li>
-            <li>copyright Alexa Simons 2021</li>
-        </ul>
+        
+        <div class="logo-info-container">
+            <ul>
+                <li class="footer-logo"><img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo"></li>
+                <li class="copyright"><span class="name" >Alexa Simons 2021</span></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact-info-container">
+            <ul>
+                <li>
+                    <img src="./resources/images/linkedin-icon.svg" alt="LinkedIn" />
+                    <p><a href="https://www.linkedin.com/in/alexa-simons/" target="_blank">linkedin.com/in/alexa-simons/</a></p>
+                </li>
+                <li>
+                    <img src="./resources/images/github-icon.svg" alt="GitHub" />
+                    <p><a href="https://github.com/Lexylou" target="_blank">github.com/Lexylou</a></p>
+                </li>
+                <li>
+                    <img src="./resources/images/email-icon.svg" alt="Email address" />
+                    <p>simons.alexa@gmail.com</p>
+                </li>
+                <li>
+                    <img class="location-icon" src="./resources/images/location-icon.svg" alt="Location" />
+                    <p>Seattle, WA Area</p>
+                </li>
+                
+            </ul>
+        </div>
     </footer>
 
-    <!--JavaScript-->
-    <script src="resources/javascript/script.js"></script>
 </body>
 </html>
