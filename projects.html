@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Alexa Simons Portfolio</title>
+    <link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--Nav Bar and Header Container-->
+    <div id="non-home-header-container">
+        <!--Nav Bar-->
+        <nav id="nav-bar">
+            <div class="logo">
+                <a class="small-screen" href="./index.html">
+                    <img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo">
+                </a>
+                <a class="large-screen" href="./index.html">
+                    <img src="resources/images/as-logo-with-name.svg" alt="Alexa Simons logo">
+                </a>
+                
+            </div>
+            <div>
+                <ul class="nav-list">
+                    <li><a class="hover-underline" href="./index.html">Home</a></li>
+                    <li><a class="hover-underline" href="./about.html">About</a></li>
+                    <li><a class="current-page"  href="./projects.html">Projects</a></li>
+                    <li><a class="contact-decoration" href="./contact.html">Contact</a></li>
+                </ul>
+            
+            </div>
+        </nav>
+
+        <!--Header-->
+        <header class="header">
+            <div>
+                <div class="title">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+
+            
+        </header>
+        <div class="header-decor"></div>
+
+    </div>
+
+    <!--Main Content-->
+    <main>
+        <!--Projects-->
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="section-underline"></div>
+            <p>Be sure to check back for updates and new projects, as I will add to this section as I complete them!</p>
+            <div id="project-page-content">
+                <!-- <div>
+                    <h3>Tea Cozy</h3>
+                    <div class="container" >
+                        <ul>
+                            <li class="date">December 2020</li>
+                            <li>By following a design spec sheet, I re-created the HTML and CSS aspects of a web page and used flexbox to ensure the web page was responsive. To view the design spec sheet 
+                                provided by Codecademy, click <a href="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg" class="thick-underline" target="_blank">here</a>.
+                            </li>
+                        </ul>
+
+                        <img src="./resources/images/tea-cozy-all.JPG" alt="Image of the completed Tea Cozy web page."> 
+                    </div>
+                </div> -->
+                <div>
+                    <h3>Tea Cozy</h3>
+                    <div class="container" >
+                        <ul>
+                            <li class="date">December 2020</li>
+                            <li>By following a design spec sheet, I re-created the HTML and CSS aspects of a web page and used flexbox to ensure the web page was responsive. To view the design spec sheet 
+                                provided by Codecademy, click <a href="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg" class="thick-underline" target="_blank">here</a>.
+                            </li>
+                        </ul>
+
+                        <img src="./resources/images/tea-cozy-all.JPG" alt="Image of the completed Tea Cozy web page."> 
+                    </div>
+                </div>
+
+                <div>
+                    <h3>The Coding Club</h3>
+                    <ul>
+                        <li class="date">December 2020</li>
+                        <li>I designed and created a responsive web page for The Coding Club, a theoretical club I came up with, using HTML and CSS.</li>
+                    </ul>
+                    <div class="container">
+                        <img src="./resources/images/coding-club.JPG" alt="Image of The Coding Club web page.">
+                        <img src="./resources/images/coding-club-2.JPG" alt="">
+                    </div>
+                </div>
+
+                <!--Game-->
+                <div>
+                    <h3>Rock, Paper, Scissors Game</h3>
+                    <div class="container">
+                        <ul>
+                            <li class="date">January 2021</li>
+                            <li>Using HTML, CSS, and JavaScript, along with inspiration from multiple projects I have completed on Codecademy, I created an interactive game of rock, paper, scissors. I further developed functions I had previously written, and I 
+                                utilized resources and guidance from supplemental code on Codecademy’s projects along with my knowledge of the DOM (document object model) to successfully integrate this game into my website. When I would get stuck, I used the 
+                                console in Chrome Dev Tools to troubleshoot and effectively debug my code to ensure my game was working as expected. This process allowed me to better understand real applications of writing JavaScript code to interact with the 
+                                DOM and increased my comfortability with writing code to add engagement and improve the user experience of my website. Ultimately, this experience got me more excited for future projects I will complete utilizing HTML, CSS, and 
+                                JavaScript all together!
+                            </li>
+                        </ul>
+
+                        <div class="game">
+                            <div class="game-instructions">
+                                <div class="instruction-box">
+                                    <h4>Step 1</h4>
+                                    <p>Input either 'rock', 'paper', or 'scissors'. You can also try guessing the secret code word that will beat all!</p>
+                                </div>
+                                <div class="instruction-box">
+                                    <h4>Step 2</h4>
+                                    <p>Click "Play" to submit your choice and see who won. (paper beats rock, rock beats scissors, and scissors beats paper)</p>
+                                </div>
+                                <div class="instruction-box">
+                                    <h4>Step 3</h4>
+                                    <p>Click "Next Round" to play again. Refresh page to start game count over.</p>
+                                </div>
+                            </div>
+
+                            <div class="game-container">
+                                <div class="round">
+                                    <p class="round-label">Round <span id="round-count">1</span></p>
+                                    <p class="winner-label" id="winner-congrats">Winner: <span id="winner">?</span></p>
+                                </div>
+
+                                <div class="play-area">
+                                    <div class="computer-move moves">
+                                        <div class="play-title">
+                                            <p class="player-label">Computer</p>
+                                            <p class="score-label">Score: <span id="computer-score">0</span></p>
+                                        </div>
+                                        <p id="computer-move">?</p>
+                                    </div>
+
+                                    <div class="user-move moves">
+                                        <div class="play-title">
+                                            <p class="player-label">You</p>
+                                            <p class="score-label">Score: <span id="user-score">0</span></p>
+                                        </div>
+
+                                        <input type="text" id="user-move" required>
+
+                                        <button class="button" id="play">Play</button>
+                                        <p id="error-message"></p>
+                                    </div>
+                                
+                                </div>
+
+                                <div class="next-round-container">
+                                    <button class="button" id="next-round" disabled>Next Round</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <!--Footer Section-->
+    <div class="footer-decor"></div>
+    <footer>
+        <div class="logo-info-container">
+            <ul>
+                <li class="footer-logo"><img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo"></li>
+                <li class="copyright"><span class="name" >Alexa Simons 2021</span></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact-info-container">
+            <ul>
+                <li>
+                    <img src="./resources/images/linkedin-icon.svg" alt="LinkedIn" />
+                    <p><a href="https://www.linkedin.com/in/alexa-simons/"  target="_blank">linkedin.com/in/alexa-simons/</a></p>
+                </li>
+                <li>
+                    <img src="./resources/images/github-icon.svg" alt="GitHub" />
+                    <p><a href="https://github.com/Lexylou"  target="_blank">github.com/Lexylou</a></p>
+                </li>
+                <li>
+                    <img src="./resources/images/email-icon.svg" alt="Email address" />
+                    <p>simons.alexa@gmail.com</p>
+                </li>
+                <li>
+                    <img class="location-icon" src="./resources/images/location-icon.svg" alt="Location" />
+                    <p>Seattle, WA Area</p>
+                </li>
+                
+            </ul>
+        </div>
+    </footer>
+
+    <script src="resources/javascript/script.js"></script>
+    
+</body>
+</html>
