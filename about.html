@@ -31,10 +31,16 @@
                 
             </div>
             <div>
-                <ul class="nav-list">
-                    <li><a class="hover-underline" href="./index.html">Home</a></li>
-                    <li><a class="current-page"  href="./about.html">About</a></li>
-                    <li><a class="hover-underline" href="./projects.html">Projects</a></li>
+                <div class="small-screen menu-icon">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </div>
+
+                <ul id="small-screen-nav">
+                    <li class="small-screen-hover"><a class="hover-underline small-screen-hover" href="./index.html">Home</a></li>
+                    <li class="collapse-current-page"><a class="current-page"  href="./about.html">About</a></li>
+                    <li class="small-screen-hover"><a class="hover-underline" href="./projects.html">Projects</a></li>
                     <li><a class="contact-decoration" href="./contact.html">Contact</a></li>
                 </ul>
             
@@ -56,45 +62,161 @@
     <!--Main Content-->
     <main>
         <div id="about-me">
-            <h2>About Me</h2>
-            <div class="section-underline"></div>
-            <div class="container">
-                <div class="image-container">
-                    <!-- <img src="resources/images/about-me-img.jpg" alt=""> -->
-                    <img src="./resources/images/about-rainbow-triangle.png" />
+            
+            <section class="container">
+                <div class="section-heading">
+                    <h2>Hey there, Alexa here!</h2>
                 </div>
-                <div class="paragraph-container">
-                    <p>Hello, I’m Alexa and welcome to my portfolio! I am a detail-oriented and highly motivated professional who graduated in May of 2019 with a Bachelor of Science in Bioengineering and minors in Entrepreneurship and Mathematics. After graduating, I held a 
-                        position as a Field Account Executive for an occupational health company. I learned a ton through this experience but have decided to further grow in a profession where I can utilize my strong problem-solving skills along-side my creativity. I have discovered 
-                        my passion for front-end engineering through an online coding platform, <a href="https://www.codecademy.com" class="thick-underline" target="_blank">Codecademy</a>, where I have learned and continue to build the skills and many aspects that make up this exciting field. With all the new skills I am 
-                        developing (no pun intended, really), I can't wait to become a front-end developer!
+                <h3>I am a self taught web designer, developer and front-end engineer, and I discovered my love for coding and front and development in late 2020.</h3>
+                
+                <div class="slide-in">
+                    <img class="triangle-pic upper-body-triangle-pic" src="./resources/images/about-rainbow-triangle.png" />
+                </div>
+                
+                <div class="paragraph-container slide-in">
+                    
+                    <p>I graduated from Washington State University <strong>(Go Cougs!)</strong> in May of 2019 earning my Bachelor of Science in Bioengineering with minors in Entrepreneurship and Mathematics. Shortly after, I held a position as a Field Account Executive for an occupational health company. I learned a ton through this experience, but I decided that I wanted to further grow in a profession where I could utilize my strong problem-solving skills along-side my creativity, and through this, I discovered my passion for front-end engineering and web development!
                     </p>
-                    <p> I enjoy working on projects where I can use my clever and critical thinking skills to overcome various types of challenges. I am an analytical and numerically driven individual and find numbers to be my strong suit. I am also adaptable and work well 
-                        in teams, so I thrive in environments where I can collaborate with others to generate the best and most innovative outcomes. I always give it my all, work hard, and maintain a positive attitude in everything that I do. Afterall, these things (along 
-                        with a touch of planning, of course) allow me to achieve my goals, no matter how large or daunting a task may be! As someone who is self-motivated and teachable, I catch on to new things quickly and with ease. Having a natural curiosity allows me to 
-                        further dive into new concepts on my own, demonstrating the ability to efficiently self-learn. In fact, it is this curiosity that drove me to learn more about front-end engineering to begin with! 
-                    </p>
-                    <p>In my free time I enjoy working on web development/coding projects (both individual and Codecademy inspired) that allow me to learn new skills and strengthen the skills I have. I also enjoy completing DIY and other art projects, assisting friends/colleagues 
-                        in anything math related (I know, I know, “Who enjoys that” right? I just genuinely love math!) and partaking in outdoor activities such as hiking and playing golf.
+                    <p>
+                        I am mainly self-taught with the assistance of an online coding platform, <a href="https://www.codecademy.com" class="thick-underline" target="_blank">Codecademy</a>, and I have learned, mastered and continue to build the skills on the many aspects that make up this exciting field. With all the new skills I am developing (no pun intended, really), I can't wait to become a front-end developer!
+
                     </p>
                 </div>
-            </div>
+            </section>
+
+            <!-- Timeline -->
+            <section>
+                <div class="section-heading">
+                    <p>Timeline</p>
+                    <h2>How I got to where I am today</h2>
+                </div>
+                <div class="section-underline"></div>
+
+                <div class="timeline">
+                    <div class="timeline-event slide-in">
+                        <h3>Present</h3>
+                        <p>I continue to work on projects and learn new skills, and I am currently working on the full-stack engineering career path on Codecademy to learn more about the back-end technologies in web development</p>
+                    </div>
+                    <div class="timeline-event slide-in">
+                        <h3>Feb 2022</h3>
+                        <p>Completed the front-end engineering career path on the online coding platform, Codecademy</p>
+                    </div>
+                    <div class="timeline-event slide-in">
+                        <h3>Jan 2022</h3>
+                        <p>Freelanced a website for a local demolition company, Elite Demolition located in the Seattle, WA area</p>
+                    </div>
+                    <div class="timeline-event slide-in">
+                        <h3>Nov 2020-2022</h3>
+                        <p>Through some serious consideration, research and some soul-searching, I found my love for coding and front end development and have been learning and developing my skills since</p>
+                    </div>
+                    <div class="timeline-event slide-in">
+                        <h3>May 2020</h3>
+                        <p>Left the FAE position, as I wanted to hold a position that better fit my skill set, such as strategically problem-solving and finding creative solutions</p>
+                    </div>
+                    <div class="timeline-event slide-in">
+                        <h3>Aug 2019 - May 2020</h3>
+                        <p>Held a position as a Field Account Executive at an occupational health company called Concentra in Kent, WA</p>
+                    </div>
+                    <div class="timeline-event slide-in">
+                        <h3>May 2019</h3>
+                        <p>Graduated from Washington State University earning my Bachelor of Science in Bioengineering, with minors in mathematics and entrepreneurship</p>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <!-- Free Time Hobbies -->
+            <section class="slide-in">
+                <div class="section-heading">
+                    <h2>When I’m not spending my time strengthening my coding skills…</h2>
+                </div>
+                <div class="section-underline"></div>
+
+                <p>In my free time, I also enjoy partaking in outdoor activities such as hiking, roller blading and playing golf, completing DIY and other art projects, jamming out to some k-pop, and assisting friends/colleagues in anything math related (I know, I know, “Who enjoys that” right? I just genuinely <strong>LOVE</strong> math!).</p>
+
+            </section>
+
+            <!-- Computer Skills Section -->
+            <section id="skills" class="slide-in">
+                <div class="section-heading">
+                    <!-- <p>What I can do</p> -->
+                    <h2>Computer Skills</h2>
+                </div>
+                <div class="section-underline center"></div>
+
+                <div class="skills-container">
+                    <ul>
+                        <li>
+                            <img src="./resources/images/html-icon-dark-mode.svg" alt="HTML logo" />
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/css-icon-dark-mode.svg" alt="CSS logo" />
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/sass-icon-dark-mode.svg" alt="Sass logo" />
+                            <p>Sass</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/javascript-icon-dark-mode.svg" alt="JavaScript logo" />
+                            <p>JavaScript</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/react-icon-dark-mode.svg" alt="React logo" />
+                            <p>React</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/redux-icon-dark-mode.svg" alt="Redux logo" />
+                            <p>Redux</p> 
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li>
+                            <img src="./resources/images/adobe-xd-icon-dark-mode.svg" alt="Adobe Xd logo" />
+                            <p>Adobe Xd</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/photoshop-icon-dark-mode.svg" alt="PhotoShop logo" />
+                            <p>Adobe PhotoShop</p> 
+                        </li>
+                        <li>
+                            <img src="./resources/images/python-icon-dark-mode.svg" alt="Python logo" />
+                            <p>Python</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/excel-icon-dark-mode.svg" alt="Microsoft Excel logo" />
+                            <p>Microsoft Excel</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/word-icon-dark-mode.svg" alt="Microsoft Word logo" />
+                            <p>Microsoft Word</p>
+                        </li>
+                        <li>
+                            <img src="./resources/images/power-point-icon-dark-mode.svg" alt="Microsoft PowerPoint logo" />
+                            <p>Microsoft PowerPoint</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
         </div>
 
-        
     </main>
 
     <!--Footer Section-->
     <div class="footer-decor"></div>
     <footer>
-        <div class="logo-info-container">
+        <div class="footer-logo">
             <ul>
-                <li class="footer-logo"><img src="resources/images/as-logo-border.svg"></li>
+                <li><img src="resources/images/as-logo-border.svg"></li>
                 <li class="copyright"><span class="name" >Alexa Simons 2021</span></li>
             </ul>
         </div>
 
-        <div class="footer-contact-info-container">
+        <div class="footer-contact">
             <ul>
                 <li>
                     <img src="./resources/images/linkedin-icon.svg" alt="LinkedIn" />
@@ -117,5 +239,6 @@
         </div> 
     </footer>
     
+    <script src="resources/javascript/script.js"></script>
 </body>
 </html>

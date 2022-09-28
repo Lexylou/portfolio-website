@@ -31,10 +31,16 @@
                 
             </div>
             <div>
-                <ul class="nav-list">
-                    <li><a class="hover-underline" href="./index.html">Home</a></li>
-                    <li><a class="hover-underline" href="./about.html">About</a></li>
-                    <li><a class="current-page"  href="./projects.html">Projects</a></li>
+                <div class="small-screen menu-icon">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </div>
+                
+                <ul id="small-screen-nav">
+                    <li class="small-screen-hover"><a class="hover-underline" href="./index.html">Home</a></li>
+                    <li class="small-screen-hover"><a class="hover-underline" href="./about.html">About</a></li>
+                    <li class="collapse-current-page small-screen-hover"><a class="current-page"  href="./projects.html">Projects</a></li>
                     <li><a class="contact-decoration" href="./contact.html">Contact</a></li>
                 </ul>
             
@@ -58,14 +64,16 @@
     <!--Main Content-->
     <main>
         <!--Projects-->
-        <div id="projects">
+        <section id="projects">
             <h2>Projects</h2>
-            <div class="section-underline"></div>
+            <div class="section-underline center"></div>
             <p>Be sure to check back for updates and new projects, as I will add to this section as I complete them!</p>
-            <div id="project-page-content">
-                <div>
+
+            <div>
+
+                <div class="slide-in">
                     <h3>Tea Cozy</h3>
-                    <div class="container" >
+                    <div class="container">
                         <ul>
                             <li class="date">December 2020</li>
                             <li>By following a design spec sheet, I re-created the HTML and CSS aspects of a web page and used flexbox to ensure the web page was responsive. To view the design spec sheet 
@@ -77,20 +85,22 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="slide-in">
                     <h3>The Coding Club</h3>
-                    <ul>
-                        <li class="date">December 2020</li>
-                        <li>I designed and created a responsive web page for The Coding Club, a theoretical club I came up with, using HTML and CSS.</li>
-                    </ul>
+                    
                     <div class="container">
+                        <ul>
+                            <li class="date">December 2020</li>
+                            <li>I designed and created a responsive web page for The Coding Club, a theoretical club I came up with, using HTML and CSS.</li>
+                        </ul>
+
                         <img src="./resources/images/coding-club.jpg" alt="Image of The Coding Club web page.">
                         <img src="./resources/images/coding-club-2.JPG" alt="">
                     </div>
                 </div>
 
                 <!--Game-->
-                <div>
+                <div class="slide-in">
                     <h3>Rock, Paper, Scissors Game</h3>
                     <div class="container">
                         <ul>
@@ -119,7 +129,7 @@
                                 </div>
                             </div>
 
-                            <div class="game-container">
+                            <div>
                                 <div class="round">
                                     <p class="round-label">Round <span id="round-count">1</span></p>
                                     <p class="winner-label" id="winner-congrats">Winner: <span id="winner">?</span></p>
@@ -129,7 +139,7 @@
                                     <div class="computer-move moves">
                                         <div class="play-title">
                                             <p class="player-label">Computer</p>
-                                            <p class="score-label">Score: <span id="computer-score">0</span></p>
+                                            <p>Score: <span id="computer-score">0</span></p>
                                         </div>
                                         <p id="computer-move">?</p>
                                     </div>
@@ -137,19 +147,19 @@
                                     <div class="user-move moves">
                                         <div class="play-title">
                                             <p class="player-label">You</p>
-                                            <p class="score-label">Score: <span id="user-score">0</span></p>
+                                            <p>Score: <span id="user-score">0</span></p>
                                         </div>
 
                                         <input type="text" id="user-move" required>
 
-                                        <button class="button" id="play">Play</button>
+                                        <button class="game-button" id="play">Play</button>
                                         <p id="error-message"></p>
                                     </div>
                                 
                                 </div>
 
                                 <div class="next-round-container">
-                                    <button class="button" id="next-round" disabled>Next Round</button>
+                                    <button class="game-button" id="next-round" disabled>Next Round</button>
                                 </div>
 
                             </div>
@@ -158,21 +168,21 @@
                 </div>
             </div>
 
-        </div>
+        </section>
         
     </main>
 
     <!--Footer Section-->
     <div class="footer-decor"></div>
     <footer>
-        <div class="logo-info-container">
+        <div class="footer-logo">
             <ul>
-                <li class="footer-logo"><img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo"></li>
+                <li><img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo"></li>
                 <li class="copyright"><span class="name" >Alexa Simons 2021</span></li>
             </ul>
         </div>
 
-        <div class="footer-contact-info-container">
+        <div class="footer-contact">
             <ul>
                 <li>
                     <img src="./resources/images/linkedin-icon.svg" alt="LinkedIn" />

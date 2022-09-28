@@ -30,11 +30,17 @@
                 
             </div>
             <div>
-                <ul class="nav-list">
-                    <li><a class="hover-underline" href="./index.html">Home</a></li>
-                    <li><a class="hover-underline" href="./about.html">About</a></li>
-                    <li><a class="hover-underline" href="./projects.html">Projects</a></li>
-                    <li><a class="contact-decoration" href="./contact.html">Contact</a></li>
+                <div class="small-screen menu-icon">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </div>
+
+                <ul id="small-screen-nav">
+                    <li class="small-screen-hover"><a class="hover-underline" href="./index.html">Home</a></li>
+                    <li class="small-screen-hover"><a class="hover-underline" href="./about.html">About</a></li>
+                    <li class="small-screen-hover"><a class="hover-underline" href="./projects.html">Projects</a></li>
+                    <li class="collapse-current-page"><a class="contact-decoration" href="./contact.html">Contact</a></li>
                 </ul>
             
             </div>
@@ -55,11 +61,11 @@
     <!--Main Content-->
     <main>
         <!--Contact-->
-        <div id="contact">
+        <section id="contact">
             <h2>Contact Me</h2>
-            <div class="section-underline"></div>
+            <div class="section-underline center"></div>
             <p>I am available for remote work or in-person work in the greater Seattle area. If you have any questions for me, or would just like to reach out, please use any of the below methods to contact me. I look forward to hearing from you!</p>
-            <div class="container">
+            <div class="container slide-in">
                 <ul>
                     <li>Email: <span>simons.alexa@gmail.com</span></li>
                     <li>Phone: <span>(832) 385-9495</span></li>
@@ -67,24 +73,24 @@
                     <li>GitHub: <a href="https://github.com/Lexylou" class="thick-underline" target="_blank">github.com/Lexylou</a></li>
                 </ul>
 
-                <img src="./resources/images/about-rainbow-triangle.png" />
+                <img class="triangle-pic upper-body-triangle-pic" src="./resources/images/about-rainbow-triangle.png" />
             </div>
             
-        </div>
+        </section>
     </main>
 
     <!--Footer Section-->
     <div class="footer-decor"></div>
     <footer>
         
-        <div class="logo-info-container">
+        <div class="footer-logo">
             <ul>
-                <li class="footer-logo"><img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo"></li>
+                <li><img src="resources/images/as-logo-border.svg" alt="Alexa Simons logo"></li>
                 <li class="copyright"><span class="name" >Alexa Simons 2021</span></li>
             </ul>
         </div>
 
-        <div class="footer-contact-info-container">
+        <div class="footer-contact">
             <ul>
                 <li>
                     <img src="./resources/images/linkedin-icon.svg" alt="LinkedIn" />
@@ -107,5 +113,6 @@
         </div>
     </footer>
 
+    <script src="resources/javascript/script.js"></script>
 </body>
 </html>

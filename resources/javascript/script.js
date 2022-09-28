@@ -1,6 +1,135 @@
-// Code for Rock, Paper, Scissors game
+// Collapsible nav
+const head = document.querySelector('.header');
+const body = document.querySelector('body');
+const main = document.querySelector('main');
 
-//Create variables
+let navBarX = document.querySelector('.menu-icon');
+const navBar = document.getElementById('nav-bar');
+let lineOne = document.querySelector('.line-one');
+let lineTwo = document.querySelector('.line-two');
+let lineThree = document.querySelector('.line-three');
+const navBarList = document.getElementById('small-screen-nav');
+
+const headerDecor = document.querySelector('.header-decor');
+
+
+document.addEventListener('scroll', 
+function() {
+    if (window.scrollY > 0) {
+        body.classList.remove('no-body-scroll');
+        head.classList.remove('blur');
+        main.classList.remove('blur');
+        headerDecor.classList.remove('header-decor-blur');
+    }
+});
+
+function navTransition() {
+    lineOne.style.transform = 'translateY(0.7rem) rotate(45deg)';
+    lineOne.style.transition = 'all 800ms ease-out 200ms';
+    lineTwo.style.opacity = '0';
+    lineTwo.style.transition = 'opacity 600ms';
+    lineThree.style.transform = 'translateY(-0.7rem) rotate(-45deg)';
+    lineThree.style.transition = 'transform 800ms ease-out 200ms';
+
+
+    navBarList.classList.add('menu-display-open');
+
+    body.classList.add('no-body-scroll');
+
+    head.classList.add('blur');
+    main.classList.add('blur');
+    head.classList.remove('blur-removal');
+    main.classList.remove('blur-removal'); 
+    
+    if (headerDecor) {
+        headerDecor.classList.add('header-decor-blur');
+        headerDecor.classList.remove('header-decor-blur-removal');
+    }
+    
+}
+
+function navCloseTransition() {
+    lineOne.style.transform = 'translateY(0rem) rotate(0deg)';
+    lineOne.style.transition = 'all 800ms ease-out 200ms';
+    lineTwo.style.opacity = '1';
+    lineTwo.style.transition = 'opacity 0.5s 0.4s ';
+    lineThree.style.transform = 'translateY(0rem) rotate(0deg)';
+    lineThree.style.transition = 'transform 800ms ease-out 200ms';
+
+
+    navBarList.classList.remove('menu-display-open');
+
+    body.classList.remove('no-body-scroll');
+
+    head.classList.add('blur-removal');
+    main.classList.add('blur-removal');
+    
+    head.classList.remove('blur');
+    main.classList.remove('blur');
+    
+
+    if (headerDecor) {
+        headerDecor.classList.add('header-decor-blur-removal');
+        headerDecor.classList.remove('header-decor-blur');
+    }
+}
+
+
+let isClicked = false;
+navBarX.addEventListener('click', 
+function() {
+
+    const toggle = () => {
+        if (!isClicked) {
+            isClicked = true;
+            console.log('true');
+        } else {
+            isClicked = false;
+            console.log('false');
+        }
+    }
+    toggle();
+
+    if (isClicked === true) {
+        navTransition();
+    } else {
+        navCloseTransition();
+    }
+
+});
+
+
+// Slide in
+const sliders = document.querySelectorAll('.slide-in');
+const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -50px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+    entries,
+    appearOnScroll
+) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+
+},     
+appearOptions);
+
+sliders.forEach( slider => {
+    appearOnScroll.observe(slider);
+
+});
+
+
+// Code for Rock, Paper, Scissors game
+// Create variables
 const roundNumberDisplay = document.getElementById('round-count');
 const winnerDisplay = document.getElementById('winner');
 
